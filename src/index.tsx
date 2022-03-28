@@ -14,7 +14,6 @@ import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import actions from './micro/actions';
 
-
 dayjs.locale('zh-cn');
 
 const reactRender = (
