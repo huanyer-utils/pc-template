@@ -1,0 +1,37 @@
+.common-bread {
+  display: flex;
+  align-items: center;
+  .bread-btn {
+    margin-right: 12px;
+    height: 24px;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .ant-breadcrumb {
+    font-size: 14px;
+  }
+  &-big {
+    .ant-breadcrumb {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .bread-btn {
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+}
+html {
+  .ant-breadcrumb {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    > span:last-child {
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+    }
+  }
+}

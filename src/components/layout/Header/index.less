@@ -1,0 +1,74 @@
+@import '../../../assets/styles/var.less';
+.header-component {
+  min-height: 70px;
+  height: 70px;
+  background: @primary-color;
+  padding: 0;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  .header-title {
+    padding-left: 24px;
+    font-size: 20px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #ffffff;
+    .logo-line {
+      display: inline-block;
+      margin: 0 15px;
+      background-color: rgba(225, 225, 225, 0.4);
+      width: 1px;
+      height: 28px;
+      vertical-align: middle;
+    }
+    > img {
+      width: 215px;
+    }
+  }
+}
+
+.right-box {
+  height: 100%;
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  .org-name {
+    line-height: 70px;
+  }
+  .userhead {
+    padding: 0 20px;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    .username {
+      font-size: 14px;
+      margin: 0 8px;
+    }
+    &:hover {
+      background-color: @primary-color;
+    }
+  }
+}
+.pending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6e7680 !important;
+  height: 46px;
+  border-bottom: 1px solid #eee;
+  .name {
+    margin-right: 20px;
+    color: #2e3d50;
+  }
+  .badge {
+    display: flex;
+    align-items: center;
+  }
+}
+.pending:nth-last-child(1) {
+  border: none;
+}
